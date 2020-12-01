@@ -5,6 +5,7 @@
 }
 
 header{
+    width: 100%;
     height: 80px;
     background-image:url(img/fondo.jpg);
 }
@@ -172,12 +173,13 @@ aside{
         padding: 25px 0;
     }
 
-   
 }
 @media screen and (max-width:561px){
-    
     .textosD{
         margin: 5px 0 0 0 ;
+    }
+    header{
+        width:100%;
     }
 }
 @media screen and (max-width:500px){
@@ -195,8 +197,11 @@ aside{
     footer{
         width: 50%;
     }
+    .textos h1{
+        font-size: 70px;
+    }
 }
-@media screen and (max-width:390){
+@media screen and (max-width:390px){
     .principal .grid .img{
         grid-column: 1/12;
         width: 250px;
@@ -208,4 +213,28 @@ aside{
     aside{
         margin: 150px 0 0 0;
     }
+    .textos h1{
+        font-size: 65px;
+    }
+    .menu{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:350px){
+    .textos h1{
+        font-size: 60px;
+    }
+    aside{
+        margin: 150px 0 0 0;
+    }
+    
+    .textos p{
+        text-align: justify;
+    }
+    .textosD h2{
+        font-size: 40px;
+    }
+    .menu >a {
+    margin:30px 10px  ;
 }
